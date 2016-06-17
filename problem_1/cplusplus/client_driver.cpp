@@ -10,11 +10,29 @@
 
 #include <iostream>
 
+#define LIMIT 1000
+
 int main()
 {
-	int 0;
+	int sum = 0;
 	
-	std::cout << "Ha!" << std::endl;
+	for(int b = 1; b < LIMIT; b++)
+	{
+		  // If multiple of three
+		if(b % 3 == 0)
+		{
+			sum += b;
+			continue;
+		}
+		
+		  // If multiple of five
+		if(b % 5 == 0)
+		{
+			sum += b;
+		}
+	}
+	
+	std::cout << "\nThe sum of all multiples of three and five under " << LIMIT << " is: " << sum << std::endl;
 	
 	return 0;
 }
