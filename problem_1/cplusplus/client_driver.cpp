@@ -32,7 +32,7 @@ int main()
 		}
 	}
 	
-	std::cout << "\nThe sum of all multiples of three and five under " << LIMIT << " is: " << sum << std::endl;
+	std::cout << "\nThe sum of all multiples of three or five under " << LIMIT << " is: " << sum << std::endl;
 	
 	return 0;
 }
